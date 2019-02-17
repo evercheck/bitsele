@@ -13,12 +13,15 @@ public class Hook {
     @Before
     public void before() {
         String driverPath;
+        /**
+         * This can be setup with config file when we want to run with another browser or with multiple node
+         */
         switch (System.getProperty("os.name")) {
             case "Linux":
                 driverPath = "src/test/resources/driver/chromedriver";
                 break;
             default:
-                driverPath = "src/test/resources/driver/windowchromedriver";
+                driverPath = "src/test/resources/driver/win32chromedriver";
                 break;
         }
 
