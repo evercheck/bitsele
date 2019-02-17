@@ -8,6 +8,6 @@
 **Execute Test**
 
 ```
-cd bitsele\
+cd bitsele
 mvn clean test
 ```
