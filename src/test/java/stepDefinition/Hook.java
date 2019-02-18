@@ -20,6 +20,9 @@ public class Hook {
             case "Linux":
                 driverPath = "src/test/resources/driver/chromedriver";
                 break;
+            case "Mac OS X":
+                driverPath = "src/test/resources/driver/macchromedriver";
+                break;
             default:
                 driverPath = "src/test/resources/driver/win32chromedriver";
                 break;
