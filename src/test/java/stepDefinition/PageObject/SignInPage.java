@@ -7,8 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignInPage extends Page {
 
-    @FindBy(xpath = "//div[@class='logo']//img[@alt='bitmark logo']")
+    @FindBy(xpath = "//div[contains(text(), 'Bitmark digital estate')]")
     public WebElement labelTitle;
+
+    @FindBy(xpath = "//div[@class='logo']//img[@alt='bitmark logo']")
+    public WebElement imageTitle;
 
     @FindBy(xpath = "//li[contains(text(), 'Sign in with app')]")
     public WebElement tabSignInWithApp;

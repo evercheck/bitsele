@@ -21,6 +21,7 @@ public class SignInSteps {
         assertTrue(getSignInPage().tabSignInWithApp.isDisplayed());
         assertTrue(getSignInPage().buttonContinue.isDisplayed());
         assertTrue(getSignInPage().labelTitle.isDisplayed());
+        assertTrue(getSignInPage().imageTitle.isDisplayed());
     }
 
     @When("^User click Continue button$")
